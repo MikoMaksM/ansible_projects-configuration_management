@@ -1,0 +1,6 @@
+version: 1.0.0 
+location: /Users/miko/ansible/nodejs-app 
+linux_name: miko
+user_home_dir: /home/{{linux_name}}
+
+docker_password: 
