@@ -59,8 +59,18 @@ Project demonstrates how to automate the deployment of a complete application en
 ## Usage
 
 ### 1. Provision Infrastructure
+This Github repo  contains Terraform code to provision the AWS infrastructure required for the EKS cluster and networking.
+
+VPC with public and private subnets
+NAT Gateway
+Amazon EKS cluster
+Managed node group
+Necessary IAM roles and policies
 
 https://github.com/MikoMaksM/aws-eks-terraform
+
+Terraform is used to provision the AWS infrastructure and create an Amazon EKS cluster.
+Ansible is then used to deploy Kubernetes manifests containing an NGINX Deployment and LoadBalancer Service. 
 
 ```bash
 cd terraform
